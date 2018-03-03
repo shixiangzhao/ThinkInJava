@@ -1,4 +1,4 @@
-package com.shixiang.io;
+package com.shixiang.think.io;
 
 import java.io.BufferedWriter;
 import java.io.File;

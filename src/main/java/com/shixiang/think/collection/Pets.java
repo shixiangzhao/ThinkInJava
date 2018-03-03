@@ -1,4 +1,4 @@
-package com.shixiang.collection;
+package com.shixiang.think.collection;
 
 import java.util.ArrayList;
 import java.util.List;

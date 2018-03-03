@@ -1,4 +1,4 @@
-package com.shixiang.collection;
+package com.shixiang.think.collection;
 
 // Containers print themselves automatically.
 import java.util.ArrayList;
