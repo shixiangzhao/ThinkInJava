@@ -1,6 +1,6 @@
 package com.shixiang.think.swing;
 
-import java.awt.FlowLayout;
+import java.awt.GridLayout;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -16,8 +16,8 @@ public class GridLayout1 extends JFrame {
 	private static final long serialVersionUID = 1L;
 
 	public GridLayout1() {
-		setLayout(new FlowLayout());
-		for(int i=0;i<10;i++) {
+		setLayout(new GridLayout(7,3));
+		for(int i=0;i<20;i++) {
 			add(new JButton("Button" + i));
 		}
 	}
