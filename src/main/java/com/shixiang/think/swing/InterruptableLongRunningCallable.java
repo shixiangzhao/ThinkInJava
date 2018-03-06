@@ -16,9 +16,9 @@ import javax.swing.JFrame;
 public class InterruptableLongRunningCallable extends JFrame {
 
     private static final long serialVersionUID = 1L;
-    private JButton b1 = new JButton("Start Long Running Task");
-    private JButton b2 = new JButton("End Long Running Task");
-    private JButton b3 = new JButton("Get results");
+    private JButton b1 = new JButton("开始同步");
+    private JButton b2 = new JButton("取消同步");
+    private JButton b3 = new JButton("同步结果");
     private TaskManager<String, CallableTask> manager = new TaskManager<String, CallableTask>();
 
     public InterruptableLongRunningCallable() {
@@ -44,7 +44,7 @@ public class InterruptableLongRunningCallable extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 for (TaskItem<String, CallableTask> tt : manager)
-                    tt.task.id();
+                    tt.task.getId();
                 for (String result : manager.getResults())
                     System.out.println(result);
             }

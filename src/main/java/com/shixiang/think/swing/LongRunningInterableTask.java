@@ -70,7 +70,7 @@ class Task implements Runnable {
         return "Task " + id;
     }
 
-    public long id() {
+    public long getId() {
         return id;
     }
 }
